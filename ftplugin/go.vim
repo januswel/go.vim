@@ -87,7 +87,7 @@ endif
 
 if !exists('*s:RunByGoRun')
     function s:RunByGoRun()
-        let s:target = expand('%:p')
+        let s:target = expand('%:p:S')
         try
             silent execute 'new +1,$!go\ run\ ' . s:target
             silent execute 'setlocal buftype=nofile'
