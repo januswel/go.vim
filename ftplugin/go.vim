@@ -1,10 +1,10 @@
 " vim ftplugin file
 " Filename:     go.vim
-" Language:     golang
 " Maintainer:   janus_wel <janus.wel.3@gmail.com>
 " License:      MIT License {{{1
 "   See under URL.  Note that redistribution is permitted with LICENSE.
-"   https://github.com/januswel/<VIMREPO>/blob/master/LICENSE
+"   https://raw.githubusercontent.com/januswel/go.vim/master/LICENSE
+" }}}1
 
 " preparations {{{1
 " check if this ftplugin is already loaded or not

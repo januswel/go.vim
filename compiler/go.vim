@@ -4,7 +4,7 @@
 " License:      MIT License {{{1
 "   See under URL.  Note that redistribution is permitted with LICENSE.
 "   https://raw.githubusercontent.com/januswel/<repo name>/master/LICENSE
-"}}}1
+" }}}1
 
 " preparations {{{1
 if exists('current_compiler')
