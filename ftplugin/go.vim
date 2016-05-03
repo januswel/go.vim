@@ -68,10 +68,19 @@ if !exists('*s:ModifyByGoFmt')
     function s:ModifyByGoFmt()
         let pos = s:SavePositions()
         try
+            let s:saved = @z
+
             silent execute '1,$!gofmt'
-            call s:RestorePositions(pos)
+            silent execute '1,$yank z'
+            if v:shell_error != 0
+                normal! u
+                echoerr @z
+            endif
         catch
             echoerr v:exception
+        finally
+            let @z = s:saved
+            call s:RestorePositions(pos)
         endtry
     endfunction
 endif
